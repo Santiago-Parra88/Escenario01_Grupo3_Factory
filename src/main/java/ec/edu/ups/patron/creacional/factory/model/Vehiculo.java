@@ -6,7 +6,7 @@ package ec.edu.ups.patron.creacional.factory.model;
 
 /**
  *
- * @author Santiago Parra
+ * @author Grupo 3
  */
 public abstract class Vehiculo {
     private String marca;
@@ -18,13 +18,13 @@ public abstract class Vehiculo {
    private double avaluo;
    public abstract double costoMatricula();
 
-    public Vehiculo(int cilindraje, double impuesto, double avaluo, String placa) {
+    /*public Vehiculo(int cilindraje, double impuesto, double avaluo, String placa) {
         this.cilindraje = cilindraje;
         this.impuesto = impuesto;
         this.avaluo = avaluo;
         this.placa = placa;
     }
-
+*/
     public String getMarca() {
         return marca;
     }

@@ -8,8 +8,8 @@ import ec.edu.ups.patron.creacional.factory.model.Vehiculo;
 
 /**
  *
- * @author Santiago Parra
+ * @author Grupo 3
  */
 public abstract class VehiculoAbstractFactory {
-   public abstract Vehiculo crearVehiculoFactory(String tipovehiculo);   
+   public abstract Vehiculo crearVehiculoFactory(String tipoVehiculo);   
 }

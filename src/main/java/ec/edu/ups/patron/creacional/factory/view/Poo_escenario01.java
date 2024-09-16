@@ -11,7 +11,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Santiago Parra
+ * @author Grupo 3
  */
 public class Poo_escenario01 {
 
@@ -38,8 +38,16 @@ public class Poo_escenario01 {
                     System.out.print("Ingrese la avaluo: ");
                     double avaluo = scanner.nextDouble();
                     scanner.nextLine();
+                    System.out.print("Ingrese la Porcentaje Impuesto a la Propiedad: ");
+                    double impuesto = scanner.nextDouble();
+                    scanner.nextLine();
                     try {
-                        Vehiculo vehiculo= VehiculoFactory.crearVehiculoFactory(tipoVehiculo, placa, avaluo, cilindraje);
+                        var vehiculoFactorty = new VehiculoFactory();
+                        Vehiculo vehiculo= vehiculoFactorty.crearVehiculoFactory(tipoVehiculo);
+                        vehiculo.setPlaca(placa);
+                        vehiculo.setAvaluo(avaluo);
+                        vehiculo.setCilindraje(cilindraje);
+                        vehiculo.setImpuesto(impuesto);
                         vehiculos.add(vehiculo);
                         System.out.println("Vehículo añadido.");
                     } catch (IllegalArgumentException e) {

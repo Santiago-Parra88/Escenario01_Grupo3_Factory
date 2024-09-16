@@ -11,19 +11,20 @@ import ec.edu.ups.patron.creacional.factory.model.Vehiculo;
 
 /**
  *
- * @author Santiago Parra
+ * @author Grupo 3
  */
-public class VehiculoFactory {
-    public static Vehiculo crearVehiculoFactory(String tipoVehiculo, String placa, double avaluo, int cilindraje) {
+public class VehiculoFactory extends VehiculoAbstractFactory{
+  @Override
+    public Vehiculo crearVehiculoFactory(String tipoVehiculo) {
      switch (tipoVehiculo) {
          case "auto":
-             return new Auto(cilindraje, 5.5, avaluo, placa);
+             return new Auto();
          case "camioneta":
-             return new Camioneta(cilindraje, 15.5, avaluo, placa);
+             return new Camioneta();
          case "camion":
-             return new Camion(cilindraje, 15.5, avaluo, placa);
+             return new Camion();
          default:
              throw new IllegalArgumentException("Parámetro inválido");
      }
- }
+}
 }
