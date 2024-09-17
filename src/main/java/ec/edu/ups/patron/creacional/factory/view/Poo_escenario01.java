@@ -43,11 +43,14 @@ public class Poo_escenario01 {
                     scanner.nextLine();
                     try {
                         var vehiculoFactorty = new VehiculoFactory();
-                        Vehiculo vehiculo= vehiculoFactorty.crearVehiculoFactory(tipoVehiculo);
+                        Vehiculo vehiculo= vehiculoFactorty.crearVehiculoFactory(tipoVehiculo) ;
                         vehiculo.setPlaca(placa);
                         vehiculo.setAvaluo(avaluo);
                         vehiculo.setCilindraje(cilindraje);
                         vehiculo.setImpuesto(impuesto);
+                        vehiculo.setColor("rojo");
+                        vehiculo.setMarca("chevro");
+                        vehiculo.setModelo("cambiar");
                         vehiculos.add(vehiculo);
                         System.out.println("Vehículo añadido.");
                     } catch (IllegalArgumentException e) {

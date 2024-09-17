@@ -9,7 +9,6 @@ package ec.edu.ups.patron.creacional.factory.model;
  * @author Grupo 3
  */
 public class Camion extends Vehiculo{
-    
     @Override
     public double costoMatricula() {
         return (this.getAvaluo() + this.getImpuesto() + this.getCilindraje()) * 15;
