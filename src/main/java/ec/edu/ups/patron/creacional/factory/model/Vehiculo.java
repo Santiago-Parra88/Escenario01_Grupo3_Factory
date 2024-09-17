@@ -17,14 +17,7 @@ public abstract class Vehiculo {
    private double impuesto;
    private double avaluo;
    public abstract double costoMatricula();
-
-    /*public Vehiculo(int cilindraje, double impuesto, double avaluo, String placa) {
-        this.cilindraje = cilindraje;
-        this.impuesto = impuesto;
-        this.avaluo = avaluo;
-        this.placa = placa;
-    }
-*/
+   
     public String getMarca() {
         return marca;
     }
